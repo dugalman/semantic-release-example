@@ -1,46 +1,26 @@
-# Getting Started with Create React App
+# SEMANTIC VERSION EXAMPLE
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The idea is to create a react project, and define the "gitlab action" to update the change, using semantic versioning
 
-## Available Scripts
+# Link
+- https://dev.to/amalv/how-to-setup-semantic-release-for-a-react-app-or-a-next-js-app-25c1
 
-In the project directory, you can run:
 
-### `npm start`
+## STEPS
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Create a react `npx create-react-app semantic-release --template typescript --use`
+2. Create a github repository `https://github.com/new`
+3. Link local repository to Github repository `git remote add origin git@github.com:<username>/<repository-name>.git;git push -u origin master`
+4. Github token. A Github token must be created in order for Semantic Release to be able to publish a new release to the Github repository.
+5. Save the github token insede  secrets config: `https://github.com/<username>/<repositoryname>/settings/secrets` .Use **GH_TOKEN** as the secret name.
+6. Install Semantic Release Git and Changelog plugins `npm install --save-dev @semantic-release/git @semantic-release/changelog`. These plugins are necessary in order to create a Changelog and publish the new release in Github.
+7. Add Semantic Release config to package.json
+8. Setup Github Actions. Github Actions will be used to create new releases of your app.
+You must store workflows in the **.github/workflows** directory in the root of your repository. Once you created the directories, add a **main.yml** file inside with the following config. Use **node-version: 16**
+9. Commit and push changes, Use the following commands:
+    1. `git add .`
+    2. `git commit -m "feat: Add Semantic Release and Github Actions"`
+    3. `git push`
+10. Congratulations! If you followed these steps, you should now have triggered Github Actions:
+11. Also, if you check the release tab in your repository, you'll also see your first published release:
+12. And finally, a Changelog file should have been automatically generated and published:
