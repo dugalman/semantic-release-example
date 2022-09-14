@@ -2,8 +2,18 @@
 
 The idea is to create a react project, and define the "gitlab action" to update the change, using semantic versioning
 
+Depending on the commit typo: the version number is going to be modified
+
+| MESSAGE                                                                 | VERSION | RELEASE  |
+| :---------------------------------------------------------------------- | :------ | :------- |
+| fix(core): fix bug A                                                    | Patch   | Fix      |
+| feat(core): new feature B                                               | Minor   | Feature  |
+| perf(core): performance improvement on C <br> BREAKING CHANGE: Change D | Major   | Breaking |
+
+
 # Link
 - https://dev.to/amalv/how-to-setup-semantic-release-for-a-react-app-or-a-next-js-app-25c1
+
 
 
 ## STEPS
