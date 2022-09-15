@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/dugalman/semantic-release-example/compare/v1.0.1...v1.0.2) (2022-09-15)
+
+
+### Bug Fixes
+
+* **css:** reduce size main logo ([a333e64](https://github.com/dugalman/semantic-release-example/commit/a333e647d1c87a6cf6c7d8f8bfc8d0de702a29b7))
+
 ## [1.0.1](https://github.com/dugalman/semantic-release-example/compare/v1.0.0...v1.0.1) (2022-09-14)
 
 
