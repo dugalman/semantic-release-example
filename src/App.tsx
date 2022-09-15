@@ -20,11 +20,11 @@ function App() {
         </a>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://www.google.com"
           target="_blank"
           rel="noopener noreferrer"
         >
-          btn 1
+          button 1
         </a>
       </header>
     </div>
