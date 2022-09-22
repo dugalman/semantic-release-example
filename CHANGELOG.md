@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/dugalman/semantic-release-example/compare/v1.0.3...v1.1.0) (2022-09-22)
+
+
+### Features
+
+* cambia la home page ([719d0bc](https://github.com/dugalman/semantic-release-example/commit/719d0bc09df484f4b51d855cd7e22c751a6074e6))
+
 ## [1.0.3](https://github.com/dugalman/semantic-release-example/compare/v1.0.2...v1.0.3) (2022-09-15)
 
 
